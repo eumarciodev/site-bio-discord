@@ -41,8 +41,8 @@ async function getuser(user_id) {
       </div>`;
   //caso queria adicionar rede social, basta mover para dentro da div!
   /*       <div class="rede">
-        <a href="https://www.instagram.com/maryzx.sz"><img src="../img/insta.png" alt="insta"/></a>
-        <a href="https://x.com/itsbxby___"><img src="../img/twitter.png" alt="insta"/></a>
+        <a href="https://www.instagram.com/@user"><img src="../img/insta.png" alt="insta"/></a>
+        <a href="https://x.com/@user"><img src="../img/twitter.png" alt="insta"/></a>
         </div> */
 
   div.insertAdjacentHTML("beforeend", divcontent);
