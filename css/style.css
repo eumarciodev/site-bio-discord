@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+
+* {
+  font-family: "Poppins", sans-serif;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  user-select: none;
+}
+
+:root {
+  --color: white;
+  --font: arial;
+}
+
+body {
+  background-image: linear-gradient(90deg, pink, #2b2d31);
+  background-size: cover;
+  cursor: crosshair;
+}
+
+#profile-container {
+  z-index: 1;
+  color: white;
+  display: block;
+  font-family: var(--font);
+  align-items: center;
+  text-align: center;
+  transform: translateY(50%);
+}
+
+img {
+  z-index: 1;
+  user-select: none;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  opacity: 100%;
+}
+
+.icon-discord {
+  border: dashed 2px pink;
+  padding: 5px;
+  box-shadow: 0 0 0 2px pink; /* Adiciona uma borda rosa de 5px */
+}
+
+.badges {
+  width: 20px;
+  height: 20px;
+}
+
+.badge {
+  background-color: pink;
+  margin-left: 80px;
+  margin-right: 80px;
+  border-radius: 5px;
+  padding-top: 3px;
+  opacity: 100%;
+}
+
+.perfil {
+  width: 17em;
+  height: 22.5em;
+  padding-top: 30px;
+  border: solid 1px pink;
+  background: #2b2d31;
+  transition: 1s ease-in-out;
+  clip-path: polygon(
+    30px 0%,
+    100% 0,
+    100% calc(100% - 30px),
+    calc(100% - 30px) 100%,
+    0 100%,
+    0% 30px
+  );
+  flex-direction: column;
+  margin: auto;
+  opacity: 90%;
+}
+
+.perfil:hover {
+  box-shadow: 0px 0px 5px 1px #1d1d1d;
+  transition: 0.3s ease-in;
+}
+
+.home {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.home a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.home a:hover {
+  cursor: crosshair;
+}
